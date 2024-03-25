@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Scroll</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>JAHNAVI</li>
+        <li class="hideOnMobile"><a href="#home" class="active">HOME</a></li>
+        <li class="hideOnMobile"><a href="#about">ABOUT</a></li>
+        <li class="hideOnMobile"><a href="#contact">CONTACT</a></li>
+        <li class="hideOnMobile"><a href="#help">HELP</a></li>
+        <li class="hideOnScreen" onclick="opennav()">&#9776;</li>
+    </ul>
+</nav>
+    <nav class="sidenavbar">
+      <ul>
+        <li onclick="closenav()">&#x274c;</li> <!---->
+        <li><a href="#home" class="active">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#help">HELP</a></li>
+      </ul>
+    </nav>
+    <section id="home">HOME</section>
+    <section id="about">ABOUT</section>
+    <section id="contact">CONTACT</section>
+    <section id="help">HELP</section>
+    <script src="script.js"></script>
+  </body>
+</html>

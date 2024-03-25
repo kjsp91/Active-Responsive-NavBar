@@ -1,0 +1,108 @@
+html{
+    scroll-behavior:smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar {
+  background-color: black;  
+  position: fixed;
+  width: 100%;
+}
+.navbar ul {
+  display: flex; /* in ul flex only margin-right:auto is working*/
+  gap: 28px;
+  margin: 0;
+  height: 10vh;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.navbar ul li {
+  list-style-type: none;
+  font-size: medium;
+  
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    color: aqua;
+}
+.navbar ul li:first-child {
+    color: whitesmoke;
+    margin-right: auto;
+    font-weight:bolder;
+    font-size: x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar ul li:last-child {
+   margin-right: 60px; 
+   color: white;
+   font-size: x-large;
+   cursor: pointer;
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    font-size: xx-large;
+}
+section:nth-child(even){
+    background-color: black;
+}
+.sidenavbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    height: 100vh;
+    width: 40%;
+    box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.84);
+    display: none;
+    
+    /* backdrop-filter:blur(10px); */
+}
+
+.sidenavbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidenavbar ul li{
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+}
+.sidenavbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.sidenavbar ul li a:hover{
+    color: aqua;
+}
+
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+@media(min-width:800px){
+    .hideOnScreen{
+        display: none;
+    }
+    .navbar ul{
+        margin-right: 40px;
+    }
+}
+
